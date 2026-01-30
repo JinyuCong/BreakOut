@@ -75,6 +75,7 @@ public class Game
         Console.ResetColor();
         Console.ReadKey(true);
         Console.Clear();
+        
     }
 
     private void CenterText(int y, string text)
