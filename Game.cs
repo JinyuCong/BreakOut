@@ -132,10 +132,14 @@ public class Game
         for (int x = 0; x < Map.Width; x++)
         {
             buffer[0, x] = '─';
+            buffer[Map.Height - 1, x] = '─';
             colorBuffer[0, x] = ConsoleColor.DarkGray;
+            colorBuffer[Map.Height - 1, x] = ConsoleColor.DarkGray;
         }
         buffer[0, 0] = '┌';
         buffer[0, Map.Width - 1] = '┐';
+        buffer[Map.Height - 1, 0] = '└';
+        buffer[Map.Height - 1, Map.Width - 1] = '┘';
 
         // 方块
         for (int r = 0; r < Block.Rows; r++)
